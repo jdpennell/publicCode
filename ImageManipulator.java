@@ -260,3 +260,5 @@ public class ImageManipulator
         {
             out = MainActivity.mainActivity.getWindow().getAttributes();
         }
+    }
+}
