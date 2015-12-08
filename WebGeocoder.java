@@ -25,6 +25,9 @@ public class WebGeocoder
   implements
     ServerIO.ServerIOListener
 {
+  /** output */
+  public ResultSet output;
+
   /** Street address to look up (required) */
   private String lookup;
 
@@ -97,9 +100,7 @@ public class WebGeocoder
     // critical section
     try
     {
-      ResultSet retrieved = formatter.fromJson(result, ResultSet.class);
-
-      // DO STUFF HERE
+      output = formatter.fromJson(result, ResultSet.class);
     }
 
     // schedule a retry if we got no reply from the server
