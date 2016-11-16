@@ -20,6 +20,14 @@ import java.util.concurrent.Semaphore;
  * Make sure to enable the "Google Maps Geocoding API"
  *
  * @author Jessica Pennell &lt;jessicadharmapennell@gmail.com&gt;
+<a href="http://www.wtfpl.net/">
+  <img
+    src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+    width="80"
+    height="15"
+    alt="WTFPL"
+    />
+</a>
  */
 public class WebGeocoder
   implements
@@ -43,17 +51,39 @@ public class WebGeocoder
   {
     return input
           .replaceAll("[^\\x20-\\x7E]", "")
-          .replace("+", "%2B").replace(" ", "+")
-          .replace("!", "%21").replace("\"", "%22").replace("#", "%23").replace("$",  "%24")
-          .replace("%", "%25").replace("&",  "%26").replace("'", "%27").replace("(",  "%28")
-          .replace(")", "%29").replace("*",  "%2A")                    .replace(",", "%2C")
-          .replace("-", "%2D").replace(".",  "%2E").replace("/", "%2F")
-                              .replace(":", "%3A").replace(";", "%3B").replace("<",  "%3C")
-          .replace("=", "%3D").replace(">",  "%3E").replace("?", "%3F").replace("@",  "%40")
-                                                   .replace("[", "%5B").replace("\\", "%5C")
-          .replace("]", "%5D").replace("^",  "%5E").replace("_", "%5F").replace("`",  "%60")
-                                                   .replace("{", "%7B").replace("|",  "%7C")
-          .replace("}", "%5D").replace("~",  "%7E")
+          .replace("+", "%2B")
+          .replace(" ", "+")
+          .replace("!", "%21")
+          .replace("\"", "%22")
+          .replace("#", "%23")
+          .replace("$",  "%24")
+          .replace("%", "%25")
+          .replace("&",  "%26")
+          .replace("'", "%27")
+          .replace("(",  "%28")
+          .replace(")", "%29")
+          .replace("*",  "%2A")
+          .replace(",", "%2C")
+          .replace("-", "%2D")
+          .replace(".",  "%2E")
+          .replace("/", "%2F")
+          .replace(":", "%3A")
+          .replace(";", "%3B")
+          .replace("<",  "%3C")
+          .replace("=", "%3D")
+          .replace(">",  "%3E")
+          .replace("?", "%3F")
+          .replace("@",  "%40")
+          .replace("[", "%5B")
+          .replace("\\", "%5C")
+          .replace("]", "%5D")
+          .replace("^",  "%5E")
+          .replace("_", "%5F")
+          .replace("`",  "%60")
+          .replace("{", "%7B")
+          .replace("|",  "%7C")
+          .replace("}", "%5D")
+          .replace("~",  "%7E")
           ;
   }
 
@@ -76,7 +106,10 @@ public class WebGeocoder
   @Override
   public String uri()
   {
-    return String.format("%s://%s/%s/%s?address=%s&key=%s", PROTO, SERVER, PAGE, OUTPUT_FORMAT, lookup, KEY);
+    return String.format (
+        "%s://%s/%s/%s?address=%s&key=%s",
+        PROTO, SERVER, PAGE, OUTPUT_FORMAT, lookup, KEY
+        );
   }
 
   /** @return data to POST to the server */

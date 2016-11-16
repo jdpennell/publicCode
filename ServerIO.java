@@ -15,14 +15,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// IMPORTANT : This is untested, uncompiled code.
-// A version of this class has been tested, but several project specific identifiers
-// were changed afterward and before putting on github
-
 /**
  * Contains a way to retrieve data asynchronously from e.g. a JSON server
  *
  * @author Jessica Pennell &lt;jessicadharmapennell@gmail.com&gt;
+<a href="http://www.wtfpl.net/">
+  <img
+    src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+    width="80"
+    height="15"
+    alt="WTFPL"
+    />
+</a>
  */
 public class ServerIO extends AsyncTask<Void, Void, String>
 {
@@ -133,3 +137,4 @@ public class ServerIO extends AsyncTask<Void, Void, String>
      */
     void onRetrieved(String result);
   }
+}

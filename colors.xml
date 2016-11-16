@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+A list mapping several commonly used colors to hex codes.
+Up-to-date version of this list can be found here as of
+Wed Nov 16 03:15:03 MST 2016
+https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
+
+Author: "Jessica Pennell" &lt;jessicadharmapennell@gmail.com&gt;
+
+Source mapping under CC ShareAlike 3.0 Unported
+https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License
+
+Below original code WTFPL
+<a href="http://www.wtfpl.net/">
+  <img
+    src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+    width="80"
+    height="15"
+    alt="WTFPL"
+    />
+</a>
+-->
+
 <resources>
     <color name="Clear">#00000000</color>
     <color name="Mahogany">#FFCD4A4A</color>
